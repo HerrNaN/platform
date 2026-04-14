@@ -9,6 +9,7 @@ ExecStartPre=-/usr/bin/docker stop climblive-api
 ExecStartPre=-/usr/bin/docker rm climblive-api
 ExecStart=/usr/bin/docker run --name climblive-api --rm --network host \
   --env-file /etc/climblive/env \
+  -v /etc/climblive/ssl:/etc/climblive/ssl:ro \
   climblive-api:latest
 ExecStop=/usr/bin/docker stop climblive-api
 Restart=always
