@@ -3,6 +3,7 @@ DB_PASSWORD=__DB_PASSWORD__
 DB_HOST=localhost
 DB_PORT=3306
 DB_DATABASE=climblive
+WWW_HOST=climblive.com
 TLS_APP_CERT_FILE=/etc/climblive/ssl/app/cert.pem
 TLS_APP_KEY_FILE=/etc/climblive/ssl/app/privkey.pem
 TLS_WWW_CERT_FILE=/etc/climblive/ssl/www/cert.pem
