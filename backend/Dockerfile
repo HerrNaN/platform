@@ -8,4 +8,5 @@ COPY --from=usersrc /etc/passwd /etc/passwd
 USER climblive
 
 COPY climblive /climblive
+EXPOSE 443
 ENTRYPOINT ["/climblive"]
